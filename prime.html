@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime No.</title>
+</head>
+<body>
+    <button onclick="prime()"> Prime </button>
+
+    <script>
+        function prime() {
+            const number = parseInt(prompt("Enter a number"));
+
+            let isPrime = true;
+
+            if(number === 1) {
+                alert(`${number} is Not a prime no.`);
+            } else if(number > 1) {
+                for(let i = 2; i< number; i++) {
+                    if(number % i == 0){
+                        isPrime = false;
+                        break;
+                    }
+                }
+
+                if(isPrime) {
+                    alert(`${number} is a prime no.`);
+                } else {
+                    alert(`${number} is not a prime no`);
+                }
+            }
+             else {
+                alert("The no. is not a prime no");
+             }
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
